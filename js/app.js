@@ -32,7 +32,7 @@ if (eatSushi === 'no'){
 }
 else  if (eatSushi === 'yes'){ 
     var yesSushi = prompt('Are you sure?');
-    console.log('Yes to Sushi', yesSushi);
+    console.log('Guest eats sushi?', yesSushi);
 }
 
 else {
