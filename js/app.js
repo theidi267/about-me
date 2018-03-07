@@ -53,5 +53,33 @@ else { alert ('Too few in deed');}
 
 console.log('Guest thinks I have ' + numOfCats + ' cats');
 
+alert('Ok, let\'s make it more fun!')
+
+
+
+var rightAnswer = 2;
+
+var guessesRemaining = 4;
+
+while(guessesRemaining > 0){ 
+    var favNum = parseInt(prompt('How many cheeseburgers does Pepper eat for dinner?')); 
+    if (favNums === rightAnswer){
+        alert('Heeeey! You know it!')
+        break
+    } 
+
+    guessesRemaining--
+
+    if (favNum < rightAnswer){
+        alert('No! Too low!')
+    }
+    if (favNum > rightAnswer){
+        alert('No! Too high!')
+    }
+}
+
+
+
+
 alert('Thank you for playing along today. You can now go and check out my awesome site')
 
