@@ -63,7 +63,7 @@ var guessesRemaining = 4;
 
 while(guessesRemaining > 0){ 
     var favNum = parseInt(prompt('How many cheeseburgers does Pepper eat for dinner?')); 
-    if (favNums === rightAnswer){
+    if (favNum === rightAnswer){
         alert('Heeeey! You know it!')
         break
     } 
@@ -78,7 +78,11 @@ while(guessesRemaining > 0){
     }
 }
 
+var listofAnimals = ['finch', 'dog', 'parrot', 'hamster'];
 
+var guessesLeft = 6;
+
+while(guessesLeft > 0)
 
 
 alert('Thank you for playing along today. You can now go and check out my awesome site')
