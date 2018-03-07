@@ -1,7 +1,6 @@
 html {
     width: 100%;
-    hight: 100%;
-}
+}   
 
 h1{
     color: rgb(36, 80, 11);
@@ -9,22 +8,27 @@ h1{
     font-size: 3em;
 }
 body {
-    background: coral;
+    background: rgb(149, 149, 235)
 }
 
 img {
+    display:block;
     width: 500px;
-    margin: auto;
-    float: middle;
+    margin: 60px 20px 20px 700px;
     border: ridge 20px;
+    border-color: rgb(146, 85, 28);
 }
 
 #be-friends {
-    float: left;
-    margin-left: 30px;
+    text-align: center;
+    font-size: 20px
+    
 }
 
-#pepper{
-    float: middle;
-
+#pepper {
+    float: left;
+    padding-left: 300px;
+    padding-top: 200px;
+    font-size: 30px;
+    
 }

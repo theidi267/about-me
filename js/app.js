@@ -1,3 +1,6 @@
+'use strict';
+
+//FIXME kkfnbkdfk
 
 
 alert ('Hello, welcome to About Me');
