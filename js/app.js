@@ -123,26 +123,34 @@ fifthQuestion();
 
 //question six
 
-var listofAnimals = ['finch', 'dog', 'parrot', 'hamster'];
+function questionSix(){
+    
+    var listofAnimals = ['finch', 'dog', 'parrot', 'hamster'];
 
-var guessesLeft = 6;
+    var guessesLeft = 6;
 
-while(guessesLeft >0){
-    var pets = prompt('Can you guess what kind of animals did I have as a pet?').toLowerCase();
+    while(guessesLeft >0){
+        var pets = prompt('Can you guess what kind of animals did I have as a pet?').toLowerCase();
 
-   for(var i=0; i< listofAnimals.length; i++){
-       if (pets === listofAnimals[i]){ 
-           alert('Good guess, I had a ' + pets)
-           guessesLeft = 0
-           break
-           counter++
-       }
-   }
-guessesLeft--
+    for(var i=0; i< listofAnimals.length; i++){
 
-if (guessesLeft === 0){ alert('Awwww, you didn\'t quite get it right, but no worries, I tell you all about my pets. I had a finch, a few dogs, a parrot and a hamster.')
-}
-}
+        if (pets === listofAnimals[i]){ 
+
+            alert('Good guess, I had a ' + pets)
+            guessesLeft = 0
+            counter++
+            break 
+        }
+    };
+
+    guessesLeft--
+
+    if (guessesLeft === 0){ alert('Awwww, you didn\'t quite get it right, but no worries, I tell you all about my pets. I had a finch, a few dogs, a parrot and a hamster.')
+    };
+    };
+};
+
+questionSix();
 
 alert('Hey, you got ' + counter + ' of 5 questions right ' + userName + ' ! Great!');
 
