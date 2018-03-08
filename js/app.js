@@ -2,15 +2,21 @@
 
 //FIXME kkfnbkdfk
 
-
+//welcome prompt
 alert ('Hello, welcome to About Me');
-
-var userName = prompt ('Please tell me your name')
 
 var counter = 0
 
-console.log(userName)
+//name intake
+function introduction() {
+    var userName = prompt ('Please tell me your name')
+    console.log(userName)
+    window.userName = userName
+};
 
+introduction();
+
+//first question
 var wouldPlay = prompt ('Would you like to play quizzies? Say yes! Or say no.');
 
 wouldPlay = wouldPlay.toUpperCase();
