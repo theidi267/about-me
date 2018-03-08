@@ -5,6 +5,10 @@
 
 alert ('Hello, welcome to About Me');
 
+var userName = prompt ('Please tell me your name')
+
+console.log(userName)
+
 var wouldPlay = prompt ('Would you like to play quizzies? Say yes! Or say no.');
 
 wouldPlay = wouldPlay.toUpperCase();
