@@ -30,16 +30,21 @@ function firstQuestion(){
     console.log('Guest likes to play? ' + wouldPlay);
 };
 
-var likeCats = prompt('Do I like cats?');
+//second question
+function secondQuestion(){
+    var likeCats = prompt('Do I like cats?');
 
-likeCats = likeCats.toLowerCase();
+    likeCats = likeCats.toLowerCase();
 
-if (likeCats === 'yes'){
-    alert('You think? We\'ll see');
-    counter++
-}
+    if (likeCats === 'yes'){
+        alert('You think? We\'ll see');
+        counter++
+    };
 
-console.log('Guest thinks I like cats? ' + likeCats);
+    console.log('Guest thinks I like cats? ' + likeCats);
+};
+
+secondQuestion();
 
 var eatSushi = prompt ('Would I eat leftover sushi for breakfast?');
 
