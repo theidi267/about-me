@@ -69,22 +69,26 @@ function thirdQuestion(){
 thirdQuestion();
 
 //fouth question
-var numOfCats = parseInt(prompt('How many cats do I have?'));
+function fourthQuestion(){
 
-if (isNaN(numOfCats)){
-    alert ('Well, that\'s not a a number!');
-}
-else { 
-    alert ('Too few in deed');
-    counter++
-}
+    var numOfCats = parseInt(prompt('How many cats do I have?'));
 
+    if (isNaN(numOfCats)){
+        alert ('Well, that\'s not a a number!');
+    } else if (numOfCats === 1){
+        alert('Indeed! Her name is Pepper!');
+        counter++
+    } else { 
+        alert ('Too few in deed');
+    };
 
 console.log('Guest thinks I have ' + numOfCats + ' cats');
 
-alert('Ok, let\'s make it more fun!')
+};
 
+fourthQuestion();
 
+alert('Ok, let\'s make it more fun!'); //move with Q functions
 
 var rightAnswer = 2;
 
