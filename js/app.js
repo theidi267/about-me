@@ -3,22 +3,18 @@
 //FIXME kkfnbkdfk
 
 //welcome prompt
-alert ('Hello, welcome to About Me');
 
 var counter = 0
 
 //name intake
 function introduction() {
-    var userName = prompt ('Please tell me your name')
-    console.log(userName);
-    window.userName = userName
+    var userName = prompt ('Please tell me your name');
+    window.userName = userName;
+    console.log('Guest is ' + userName);
 };
-
-introduction();
 
 //first question
 function firstQuestion(){
-
     var wouldPlay = prompt ('Would you like to play quizzies? Say yes! Or say no.');
 
     wouldPlay = wouldPlay.toUpperCase();
@@ -44,8 +40,6 @@ function secondQuestion(){
     console.log('Guest thinks I like cats? ' + likeCats);
 };
 
-secondQuestion();
-
 //third question
 function thirdQuestion(){
     var eatSushi = prompt ('Would I eat leftover sushi for breakfast?');
@@ -66,11 +60,8 @@ function thirdQuestion(){
     console.log('Guest thinks I eat sushi? ' + eatSushi);
 };
 
-thirdQuestion();
-
 //fouth question
 function fourthQuestion(){
-
     var numOfCats = parseInt(prompt('How many cats do I have?'));
 
     if (isNaN(numOfCats)){
@@ -82,14 +73,8 @@ function fourthQuestion(){
         alert ('Too few in deed');
     };
 
-console.log('Guest thinks I have ' + numOfCats + ' cats');
-
+    console.log('Guest thinks I have ' + numOfCats + ' cats');
 };
-
-fourthQuestion();
-
-alert('Ok, let\'s make it more fun!'); //move with Q functions
-
 
 //fifth question
 function fifthQuestion(){
@@ -116,15 +101,11 @@ function fifthQuestion(){
             alert('No! Too high!')
         }
     }
-    console.log('guest thinks cheeseburger count is ' + favNum + ' .');
+    console.log('Guest thinks cheeseburger count is ' + favNum + ' .');
 };
 
-fifthQuestion();
-
 //question six
-
 function questionSix(){
-    
     var listofAnimals = ['finch', 'dog', 'parrot', 'hamster'];
 
     var guessesLeft = 6;
@@ -142,13 +123,28 @@ function questionSix(){
             break 
         }
     };
-
     guessesLeft--
 
     if (guessesLeft === 0){ alert('Awwww, you didn\'t quite get it right, but no worries, I tell you all about my pets. I had a finch, a few dogs, a parrot and a hamster.')
     };
     };
 };
+
+alert ('Hello, welcome to About Me');
+
+introduction();
+
+firstQuestion();
+
+secondQuestion();
+
+thirdQuestion();
+
+fourthQuestion();
+
+alert('Ok, let\'s make it more fun!');
+
+fifthQuestion();
 
 questionSix();
 
