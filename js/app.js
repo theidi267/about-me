@@ -112,8 +112,7 @@ if (guessesLeft === 0){ alert('Awwww, you didn\'t quite get it right, but no wor
 }
 }
 
-alert('Hey, you got ' + counter + ' of 5 questions right ' + userName + ' ! Great!')
+alert('Hey, you got ' + counter + ' of 5 questions right ' + userName + ' ! Great!');
 
-
-alert('Thank you for playing along today. You can now go and check out my awesome site')
+alert('Thank you for playing along today. You can now go and check out my awesome site');
 
