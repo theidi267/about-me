@@ -10,22 +10,25 @@ var counter = 0
 //name intake
 function introduction() {
     var userName = prompt ('Please tell me your name')
-    console.log(userName)
+    console.log(userName);
     window.userName = userName
 };
 
 introduction();
 
 //first question
-var wouldPlay = prompt ('Would you like to play quizzies? Say yes! Or say no.');
+function firstQuestion(){
 
-wouldPlay = wouldPlay.toUpperCase();
+    var wouldPlay = prompt ('Would you like to play quizzies? Say yes! Or say no.');
 
-if (wouldPlay === 'NO') {
+    wouldPlay = wouldPlay.toUpperCase();
+    
+    if (wouldPlay === 'NO') {
     alert ('Please reconsider');
-}
+    };
 
-console.log('Guest likes to play? ' + wouldPlay);
+    console.log('Guest likes to play? ' + wouldPlay);
+};
 
 var likeCats = prompt('Do I like cats?');
 
