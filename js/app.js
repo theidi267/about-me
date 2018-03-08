@@ -7,6 +7,8 @@ alert ('Hello, welcome to About Me');
 
 var userName = prompt ('Please tell me your name')
 
+var counter = 0
+
 console.log(userName)
 
 var wouldPlay = prompt ('Would you like to play quizzies? Say yes! Or say no.');
@@ -25,6 +27,7 @@ likeCats = likeCats.toLowerCase();
 
 if (likeCats === 'yes'){
     alert('You think? We\'ll see');
+    counter++
 }
 
 console.log('Guest thinks I like cats? ' + likeCats);
@@ -40,6 +43,7 @@ if (eatSushi === 'no'){
 else  if (eatSushi === 'yes'){ 
     var yesSushi = prompt('Are you sure?');
     console.log('Guest eats sushi?', yesSushi);
+    counter++
 }
 
 else {
@@ -53,7 +57,11 @@ var numOfCats = parseInt(prompt('How many cats do I have?'));
 if (isNaN(numOfCats)){
     alert ('Well, that\'s not a a number!');
 }
-else { alert ('Too few in deed');}
+else { 
+    alert ('Too few in deed');
+    counter++
+}
+
 
 console.log('Guest thinks I have ' + numOfCats + ' cats');
 
@@ -70,6 +78,7 @@ while(guessesRemaining > 0){
     if (favNum === rightAnswer){
         alert('Heeeey! You know it!')
         break
+        counter++
     } 
 
     guessesRemaining--
@@ -94,6 +103,7 @@ while(guessesLeft >0){
            alert('Good guess, I had a ' + pets)
            guessesLeft = 0
            break
+           counter++
        }
    }
 guessesLeft--
@@ -101,6 +111,8 @@ guessesLeft--
 if (guessesLeft === 0){ alert('Awwww, you didn\'t quite get it right, but no worries, I tell you all about my pets. I had a finch, a few dogs, a parrot and a hamster.')
 }
 }
+
+alert('Hey, you got ' + counter + ' of 5 questions right ' + userName + ' ! Great!')
 
 
 alert('Thank you for playing along today. You can now go and check out my awesome site')
