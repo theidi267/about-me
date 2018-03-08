@@ -46,26 +46,29 @@ function secondQuestion(){
 
 secondQuestion();
 
-var eatSushi = prompt ('Would I eat leftover sushi for breakfast?');
+//third question
+function thirdQuestion(){
+    var eatSushi = prompt ('Would I eat leftover sushi for breakfast?');
 
-eatSushi = eatSushi.toLowerCase();
+    eatSushi = eatSushi.toLowerCase();
 
-if (eatSushi === 'no'){
-    var noSushi = prompt ('Would you?');
-    console.log('Guest eats sushi?', noSushi);
-}
-else  if (eatSushi === 'yes'){ 
-    var yesSushi = prompt('Are you sure?');
-    console.log('Guest eats sushi?', yesSushi);
-    counter++
-}
+    if (eatSushi === 'no'){
+        var noSushi = prompt ('Would you?');
+        console.log('Guest eats sushi?', noSushi);
+    } else  if (eatSushi === 'yes'){ 
+        var yesSushi = prompt('Are you sure?');
+        console.log('Guest eats sushi?', yesSushi);
+        counter++
+    } else {
+        alert('Moving on');
+    };
 
-else {
-    alert('Moving on');
-}
+    console.log('Guest thinks I eat sushi? ' + eatSushi);
+};
 
-console.log('Guest thinks I eat sushi? ' + eatSushi);
+thirdQuestion();
 
+//fouth question
 var numOfCats = parseInt(prompt('How many cats do I have?'));
 
 if (isNaN(numOfCats)){
