@@ -90,27 +90,38 @@ fourthQuestion();
 
 alert('Ok, let\'s make it more fun!'); //move with Q functions
 
-var rightAnswer = 2;
 
-var guessesRemaining = 4;
+//fifth question
+function fifthQuestion(){
+    var rightAnswer = 2;
 
-while(guessesRemaining > 0){ 
-    var favNum = parseInt(prompt('How many cheeseburgers does Pepper eat for dinner?')); 
-    if (favNum === rightAnswer){
-        alert('Heeeey! You know it!')
-        break
-        counter++
-    } 
+    var guessesRemaining = 3;
 
-    guessesRemaining--
+    while(guessesRemaining > 0){ 
 
-    if (favNum < rightAnswer){
-        alert('No! Too low!')
+        var favNum = parseInt(prompt('How many cheeseburgers does Pepper eat for dinner?')); 
+
+        if (favNum === rightAnswer){
+            alert('Heeeey! You know it!')
+            break
+            counter++
+        } 
+
+        guessesRemaining--
+
+        if (favNum < rightAnswer){
+            alert('No! Too low!')
+        }
+        if (favNum > rightAnswer){
+            alert('No! Too high!')
+        }
     }
-    if (favNum > rightAnswer){
-        alert('No! Too high!')
-    }
-}
+    console.log('guest thinks cheeseburger count is ' + favNum + ' .');
+};
+
+fifthQuestion();
+
+//question six
 
 var listofAnimals = ['finch', 'dog', 'parrot', 'hamster'];
 
