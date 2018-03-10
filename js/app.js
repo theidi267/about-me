@@ -21,18 +21,20 @@ if (wouldPlay === 'NO') {
 
 console.log('Guest likes to play? ' + wouldPlay);
 
-var likeCats = prompt('Do I like cats?');
+var likeCats = prompt('Do you think I like cats?');
 
 likeCats = likeCats.toLowerCase();
 
 if (likeCats === 'yes'){
     alert('You think? We\'ll see');
     counter++
+} else {
+    alert('But, they are so likable!')
 }
 
 console.log('Guest thinks I like cats? ' + likeCats);
 
-var eatSushi = prompt ('Would I eat leftover sushi for breakfast?');
+var eatSushi = prompt ('Do you think I would eat leftover sushi for breakfast?');
 
 eatSushi = eatSushi.toLowerCase();
 
@@ -52,16 +54,15 @@ else {
 
 console.log('Guest thinks I eat sushi? ' + eatSushi);
 
-var numOfCats = parseInt(prompt('How many cats do I have?'));
+var numOfCats = parseInt(prompt('How many cats do you think I have?'));
 
 if (isNaN(numOfCats)){
     alert ('Well, that\'s not a a number!');
 }
 else { 
-    alert ('Too few in deed');
+    alert ('I wish I had more!');
     counter++
 }
-
 
 console.log('Guest thinks I have ' + numOfCats + ' cats');
 
