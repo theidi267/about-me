@@ -1,0 +1,35 @@
+ 
+
+h1{
+    color: rgb(112, 199, 61);
+    font-size: 3em;
+    text-align: center;
+}
+
+body {
+    background: url("img/bike.jpg");
+    color: rgb(219, 216, 34);
+    
+}
+
+img {
+    display:block;
+    width: 500px;
+    margin: 60px 20px 20px 700px;
+    border: ridge 20px;
+    border-color: rgb(146, 85, 28);
+}
+
+#framedpicture {
+
+    position: relative;
+
+
+}
+
+.rotate {
+    
+    transform: rotate(90deg)
+
+}
+
