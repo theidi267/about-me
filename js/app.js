@@ -4,6 +4,7 @@
 
 //welcome prompt
 
+
 var counter = 0
 
 //name intake
@@ -21,34 +22,32 @@ function firstQuestion(){
     
     if (wouldPlay === 'NO') {
     alert ('Please reconsider');
-    };
+    }
 
     console.log('Guest likes to play? ' + wouldPlay);
 };
 
 //second question
 function secondQuestion(){
-    var likeCats = prompt('Do I like cats?');
+    var likeCats = prompt('Do you think I like cats?');
 
     likeCats = likeCats.toLowerCase();
 
     if (likeCats === 'yes'){
         alert('You think? We\'ll see');
         counter++
-    };
-
+    } else {
+        alert('But, they are so likable!');
+    }   
     console.log('Guest thinks I like cats? ' + likeCats);
 };
 
 //third question
 function thirdQuestion(){
-    var eatSushi = prompt ('Would I eat leftover sushi for breakfast?');
+    var eatSushi = prompt ('Do you think I would eat leftover sushi for breakfast?');
 
     eatSushi = eatSushi.toLowerCase();
 
-<<<<<<< HEAD
-var likeCats = prompt('Do you think I like cats?');
-=======
     if (eatSushi === 'no'){
         var noSushi = prompt ('Would you?');
         console.log('Guest eats sushi?', noSushi);
@@ -58,86 +57,60 @@ var likeCats = prompt('Do you think I like cats?');
         counter++
     } else {
         alert('Moving on');
-    };
->>>>>>> e0ae4f9f1c2419806191140da73348c9eb3fd73c
+    }
 
     console.log('Guest thinks I eat sushi? ' + eatSushi);
 };
 
-<<<<<<< HEAD
-if (likeCats === 'yes'){
-    alert('You think? We\'ll see');
-    counter++
-} else {
-    alert('But, they are so likable!')
-}
-=======
-//fouth question
+//fourth question
 function fourthQuestion(){
-    var numOfCats = parseInt(prompt('How many cats do I have?'));
->>>>>>> e0ae4f9f1c2419806191140da73348c9eb3fd73c
 
+   var numOfCats = parseInt(prompt('How many cats do you think I have?'));
+ 
     if (isNaN(numOfCats)){
         alert ('Well, that\'s not a a number!');
     } else if (numOfCats === 1){
         alert('Indeed! Her name is Pepper!');
         counter++
     } else { 
-        alert ('Too few in deed');
-    };
+        alert ('I wish I had more!');
+    }
 
-<<<<<<< HEAD
-var eatSushi = prompt ('Do you think I would eat leftover sushi for breakfast?');
-=======
     console.log('Guest thinks I have ' + numOfCats + ' cats');
 };
->>>>>>> e0ae4f9f1c2419806191140da73348c9eb3fd73c
-
+ 
 //fifth question
 function fifthQuestion(){
-    var rightAnswer = 2;
 
+    var rightAnswer = 2;
     var guessesRemaining = 3;
 
     while(guessesRemaining > 0){ 
 
         var favNum = parseInt(prompt('How many cheeseburgers does Pepper eat for dinner?')); 
 
-<<<<<<< HEAD
-var numOfCats = parseInt(prompt('How many cats do you think I have?'));
-
-if (isNaN(numOfCats)){
-    alert ('Well, that\'s not a a number!');
-}
-else { 
-    alert ('I wish I had more!');
-    counter++
-}
-
-console.log('Guest thinks I have ' + numOfCats + ' cats');
-=======
         if (favNum === rightAnswer){
-            alert('Heeeey! You know it!')
-            break
+                alert('Heeeey! You know it!')
+            break;
             counter++
-        } 
-
-        guessesRemaining--
-
+        }         
+     guessesRemaining--
+         
         if (favNum < rightAnswer){
-            alert('No! Too low!')
-        }
+                alert('No! Too low!')
+            }
         if (favNum > rightAnswer){
-            alert('No! Too high!')
+                 alert('No! Too high!')
+            }
         }
-    }
-    console.log('Guest thinks cheeseburger count is ' + favNum + ' .');
+        console.log('Guest thinks cheeseburger count is ' + favNum + ' .');
 };
 
-//question six
-function questionSix(){
+
+//sixth question
+function sixthQuestion(){
+    
     var listofAnimals = ['finch', 'dog', 'parrot', 'hamster'];
->>>>>>> e0ae4f9f1c2419806191140da73348c9eb3fd73c
 
     var guessesLeft = 6;
 
@@ -151,15 +124,16 @@ function questionSix(){
             alert('Good guess, I had a ' + pets)
             guessesLeft = 0
             counter++
-            break 
+            break;
         }
-    };
+    }
+
     guessesLeft--
 
-    if (guessesLeft === 0){ alert('Awwww, you didn\'t quite get it right, but no worries, I tell you all about my pets. I had a finch, a few dogs, a parrot and a hamster.')
-    };
-    };
-};
+    if (guessesLeft === 0){ alert('Awwww, you didn\'t quite get it right, but no worries, I\'ll tell you all about my pets. I had a finch, a few dogs, a parrot and a hamster.')
+   }
+  }
+}
 
 alert ('Hello, welcome to About Me');
 
@@ -177,7 +151,7 @@ alert('Ok, let\'s make it more fun!');
 
 fifthQuestion();
 
-questionSix();
+sixthQuestion();
 
 alert('Hey, you got ' + counter + ' of 5 questions right ' + userName + ' ! Great!');
 
