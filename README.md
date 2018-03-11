@@ -20,5 +20,5 @@ As I'm continuing to build, I will extend it with more categories, but for now i
 
 Backround picture: Shattered Island by Julien Renvoye
   http://thepatternlibrary.com/#shattered-island
-Background picture for Pepper: Kiwis by Natalia De Frutos
-  http://thepatternlibrary.com/#kiwis
+Background picture for Pepper: White wood by Claudio Guglieri
+  http://thepatternlibrary.com/#white-wood

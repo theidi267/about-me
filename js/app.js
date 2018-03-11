@@ -115,7 +115,7 @@ function sixthQuestion(){
     var guessesLeft = 6;
 
     while(guessesLeft >0){
-        var pets = prompt('Can you guess what kind of animals did I have as a pet?').toLowerCase();
+        var pets = prompt('Can you guess what kinds of animals I have had as a pet?').toLowerCase();
 
     for(var i=0; i< listofAnimals.length; i++){
 

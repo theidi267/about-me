@@ -11,6 +11,11 @@ body {
     color: rgb(219, 216, 34);
     font-size: 25px
 }
+a {
+    text-decoration: none;
+    color: honeydew;
+        
+    }
 
 div {
     text-align: center;
@@ -31,12 +36,6 @@ div {
     float: right;
     margin-top: 100px;
     margin-right: 170px;
-}
-
-a:link {
-
-    color: hotpink;
-    text-align: center;
 }
 
 
