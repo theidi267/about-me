@@ -36,14 +36,9 @@ div {
 a:link {
 
     color: hotpink;
+    text-align: center;
 }
 
-.link {
-    
-    text-align: center;
-    color: antiquewhite;
-    
-}
 
 img {
     
@@ -52,11 +47,58 @@ img {
     border-color: rgb(112, 199,61);
     width: 500px;
     margin: (100px, 100px);
-
 }
 
-#framedpicture {
-    position: relative;
+
+#kayaklittle:hover {
+  
+    position: relative;   
+}
+#kayaklittle:hover:after {
+
+    content: url(img/kayakinglittle.jpg);
+    display: block;
+    position: absolute;
+    right: 200px;
+}
+
+#kayakbig:hover {
+  
+    position: relative;   
+}
+#kayakbig:hover:after {
+
+    content: url(img/kayakingnow.jpg);
+    display: block;
+    position: absolute;
+    right: 400px;
+    bottom: 50px;
+}
+
+#dress:hover {
+  
+    position: relative;   
+}
+#dress:hover:after {
+
+    content: url(img/dress.jpg);
+    display: block;
+    position: absolute;
+    right: 200px;
+    bottom: 50px;
+}
+
+#pets:hover {
+  
+    position: relative;   
+}
+#pets:hover:after {
+
+    content: url(img/pets.jpg);
+    display: block;
+    position: absolute;
+    right: 300px;
+    bottom: 150px;
 }
 
 #work:hover {
@@ -68,7 +110,33 @@ img {
     content: url(img/likestowork.jpg);
     display: block;
     position: absolute;
-    left: 100px;
-    
+    right: 100px;
+    bottom: 100px;
+}
+
+#travel1:hover {
+  
+    position: relative;   
+}
+#travel1:hover:after {
+
+    content: url(img/travel.jpg);
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: 300px;
+}
+
+#travel2:hover {
+  
+    position: relative;   
+}
+#travel2:hover:after {
+
+    content: url(img/travelsomemore.jpg);
+    display: block;
+    position: absolute;
+    right: 150px;
+    bottom: 350px;
 }
 
