@@ -11,43 +11,38 @@ body {
     color: rgb(219, 216, 34);
     font-size: 25px
 }
+
 a {
     text-decoration: none;
     color: honeydew;
         
-    }
+}
 
 div {
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .pic {
     width: 520px;
     margin-top: 50px;
     margin-left: 170px;
-    float: left;
-   
+    float: left;   
 }
 
 .list {
-
     width: 500px;
     float: right;
     margin-top: 100px;
     margin-right: 170px;
 }
 
-
-img {
-    
+img {    
     display: block;
     border: ridge 10px;
     border-color: rgb(112, 199,61);
     width: 500px;
     margin: (100px, 100px);
 }
-
 
 #kayaklittle:hover {
   
