@@ -1,6 +1,6 @@
  
 
-h1{
+h1 {
     color: rgb(112, 199, 61);
     font-size: 3em;
     text-align: center;
@@ -9,37 +9,66 @@ h1{
 body {
     background: url("img/shattered-island.gif");
     color: rgb(219, 216, 34);
+    font-size: 25px
+}
+
+div {
+    text-align: center;
+    
+}
+
+.pic {
+    width: 520px;
+    margin-top: 50px;
+    margin-left: 170px;
+    float: left;
+   
+}
+
+.list {
+
+    width: 500px;
+    float: right;
+    margin-top: 100px;
+    margin-right: 170px;
+}
+
+a:link {
+
+    color: hotpink;
+}
+
+.link {
+    
+    text-align: center;
+    color: antiquewhite;
     
 }
 
 img {
-    display:block;
+    
+    display: block;
+    border: ridge 10px;
+    border-color: rgb(112, 199,61);
     width: 500px;
-    margin: 60px 20px 20px 700px;
-    border: ridge 20px;
-    border-color: rgb(146, 85, 28);
+    margin: (100px, 100px);
+
 }
 
 #framedpicture {
-
-    position: relative;
-
-
-}
-
-.rotate {
-    
-    transform: rotate(90deg)
-
-}
-
-a:hover {
     position: relative;
 }
-a:hover:after {
-    content: url(img/mesummer.jpg);
+
+#work:hover {
+  
+    position: relative;   
+}
+#work:hover:after {
+
+    content: url(img/likestowork.jpg);
     display: block;
     position: absolute;
     left: 100px;
+    
 }
 
